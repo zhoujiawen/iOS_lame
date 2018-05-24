@@ -15,6 +15,11 @@
 		18466DAC20B6895A00E25710 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18466DAB20B6895A00E25710 /* main.m */; };
 		18466DB620B6895A00E25710 /* EncoderToMp3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18466DB520B6895A00E25710 /* EncoderToMp3Tests.m */; };
 		18466DC120B6895A00E25710 /* EncoderToMp3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18466DC020B6895A00E25710 /* EncoderToMp3UITests.m */; };
+		18466E0D20B6C62D00E25710 /* test.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 18466DF420B6C62D00E25710 /* test.pcm */; };
+		18466E0E20B6C62D00E25710 /* EncoderLame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18466DF720B6C62D00E25710 /* EncoderLame.cpp */; };
+		18466E0F20B6C62D00E25710 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18466DFB20B6C62D00E25710 /* libmp3lame.a */; };
+		18466E1020B6C62D00E25710 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18466E0220B6C62D00E25710 /* libx264.a */; };
+		18466E1120B6C62D00E25710 /* libfdk-aac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18466E0C20B6C62D00E25710 /* libfdk-aac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,20 @@
 		18466DBC20B6895A00E25710 /* EncoderToMp3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncoderToMp3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18466DC020B6895A00E25710 /* EncoderToMp3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncoderToMp3UITests.m; sourceTree = "<group>"; };
 		18466DC220B6895A00E25710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18466DF420B6C62D00E25710 /* test.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.pcm; sourceTree = "<group>"; };
+		18466DF720B6C62D00E25710 /* EncoderLame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EncoderLame.cpp; sourceTree = "<group>"; };
+		18466DF820B6C62D00E25710 /* EncoderLame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EncoderLame.hpp; sourceTree = "<group>"; };
+		18466DFB20B6C62D00E25710 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		18466DFC20B6C62D00E25710 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		18466DFF20B6C62D00E25710 /* x264_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264_config.h; sourceTree = "<group>"; };
+		18466E0020B6C62D00E25710 /* x264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264.h; sourceTree = "<group>"; };
+		18466E0220B6C62D00E25710 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
+		18466E0620B6C62D00E25710 /* aacdecoder_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aacdecoder_lib.h; sourceTree = "<group>"; };
+		18466E0720B6C62D00E25710 /* machine_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = machine_type.h; sourceTree = "<group>"; };
+		18466E0820B6C62D00E25710 /* aacenc_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aacenc_lib.h; sourceTree = "<group>"; };
+		18466E0920B6C62D00E25710 /* genericStds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genericStds.h; sourceTree = "<group>"; };
+		18466E0A20B6C62D00E25710 /* FDK_audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDK_audio.h; sourceTree = "<group>"; };
+		18466E0C20B6C62D00E25710 /* libfdk-aac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libfdk-aac.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18466E1120B6C62D00E25710 /* libfdk-aac.a in Frameworks */,
+				18466E0F20B6C62D00E25710 /* libmp3lame.a in Frameworks */,
+				18466E1020B6C62D00E25710 /* libx264.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +123,7 @@
 		18466D9B20B6895700E25710 /* EncoderToMp3 */ = {
 			isa = PBXGroup;
 			children = (
+				18466DF220B6C62D00E25710 /* EncoderSDK */,
 				18466D9C20B6895700E25710 /* AppDelegate.h */,
 				18466D9D20B6895700E25710 /* AppDelegate.m */,
 				18466D9F20B6895700E25710 /* ViewController.h */,
@@ -130,6 +153,123 @@
 				18466DC220B6895A00E25710 /* Info.plist */,
 			);
 			path = EncoderToMp3UITests;
+			sourceTree = "<group>";
+		};
+		18466DF220B6C62D00E25710 /* EncoderSDK */ = {
+			isa = PBXGroup;
+			children = (
+				18466DF320B6C62D00E25710 /* Source */,
+				18466DF520B6C62D00E25710 /* Code */,
+				18466DF920B6C62D00E25710 /* SDK */,
+			);
+			path = EncoderSDK;
+			sourceTree = "<group>";
+		};
+		18466DF320B6C62D00E25710 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				18466DF420B6C62D00E25710 /* test.pcm */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		18466DF520B6C62D00E25710 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				18466DF620B6C62D00E25710 /* EncoderToMp3 */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		18466DF620B6C62D00E25710 /* EncoderToMp3 */ = {
+			isa = PBXGroup;
+			children = (
+				18466DF720B6C62D00E25710 /* EncoderLame.cpp */,
+				18466DF820B6C62D00E25710 /* EncoderLame.hpp */,
+			);
+			path = EncoderToMp3;
+			sourceTree = "<group>";
+		};
+		18466DF920B6C62D00E25710 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				18466DFA20B6C62D00E25710 /* LameSDK */,
+				18466DFD20B6C62D00E25710 /* X264SDk */,
+				18466E0320B6C62D00E25710 /* FdkaccSDK */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		18466DFA20B6C62D00E25710 /* LameSDK */ = {
+			isa = PBXGroup;
+			children = (
+				18466DFB20B6C62D00E25710 /* libmp3lame.a */,
+				18466DFC20B6C62D00E25710 /* lame.h */,
+			);
+			path = LameSDK;
+			sourceTree = "<group>";
+		};
+		18466DFD20B6C62D00E25710 /* X264SDk */ = {
+			isa = PBXGroup;
+			children = (
+				18466DFE20B6C62D00E25710 /* include */,
+				18466E0120B6C62D00E25710 /* lib */,
+			);
+			path = X264SDk;
+			sourceTree = "<group>";
+		};
+		18466DFE20B6C62D00E25710 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				18466DFF20B6C62D00E25710 /* x264_config.h */,
+				18466E0020B6C62D00E25710 /* x264.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		18466E0120B6C62D00E25710 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				18466E0220B6C62D00E25710 /* libx264.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		18466E0320B6C62D00E25710 /* FdkaccSDK */ = {
+			isa = PBXGroup;
+			children = (
+				18466E0420B6C62D00E25710 /* include */,
+				18466E0B20B6C62D00E25710 /* lib */,
+			);
+			path = FdkaccSDK;
+			sourceTree = "<group>";
+		};
+		18466E0420B6C62D00E25710 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				18466E0520B6C62D00E25710 /* fdk-aac */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		18466E0520B6C62D00E25710 /* fdk-aac */ = {
+			isa = PBXGroup;
+			children = (
+				18466E0620B6C62D00E25710 /* aacdecoder_lib.h */,
+				18466E0720B6C62D00E25710 /* machine_type.h */,
+				18466E0820B6C62D00E25710 /* aacenc_lib.h */,
+				18466E0920B6C62D00E25710 /* genericStds.h */,
+				18466E0A20B6C62D00E25710 /* FDK_audio.h */,
+			);
+			path = "fdk-aac";
+			sourceTree = "<group>";
+		};
+		18466E0B20B6C62D00E25710 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				18466E0C20B6C62D00E25710 /* libfdk-aac.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +377,7 @@
 			files = (
 				18466DA920B6895A00E25710 /* LaunchScreen.storyboard in Resources */,
 				18466DA620B6895A00E25710 /* Assets.xcassets in Resources */,
+				18466E0D20B6C62D00E25710 /* test.pcm in Resources */,
 				18466DA420B6895700E25710 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +406,7 @@
 				18466DA120B6895700E25710 /* ViewController.m in Sources */,
 				18466DAC20B6895A00E25710 /* main.m in Sources */,
 				18466D9E20B6895700E25710 /* AppDelegate.m in Sources */,
+				18466E0E20B6C62D00E25710 /* EncoderLame.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +582,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EncoderToMp3/EncoderSDK/SDK/LameSDK",
+					"$(PROJECT_DIR)/EncoderToMp3/EncoderSDK/SDK/X264SDk/lib",
+					"$(PROJECT_DIR)/EncoderToMp3/EncoderSDK/SDK/FdkaccSDK/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = zhoujiawen.EncoderToMp3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,6 +604,12 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EncoderToMp3/EncoderSDK/SDK/LameSDK",
+					"$(PROJECT_DIR)/EncoderToMp3/EncoderSDK/SDK/X264SDk/lib",
+					"$(PROJECT_DIR)/EncoderToMp3/EncoderSDK/SDK/FdkaccSDK/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zhoujiawen.EncoderToMp3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
