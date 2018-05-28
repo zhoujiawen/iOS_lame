@@ -7,3 +7,5 @@
 LAME编译: https://blog.csdn.net/zhjw1991/article/details/80404702
 FDK-ACC编译:https://blog.csdn.net/zhjw1991/article/details/80406104
 X264编译:https://blog.csdn.net/zhjw1991/article/details/80406688
+
+4.新添加的FFmpeg库和各个编译脚本
